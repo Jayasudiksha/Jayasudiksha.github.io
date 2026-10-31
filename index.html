@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jayasudiksha M | Computer Science Teacher & AI Researcher</title>
+<meta name="description" content="Portfolio of Jayasudiksha M: MCA graduate, CBSE computer science and AI teacher, and co-author of an IEEE paper on AI-based network traffic optimization.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2236%22 fill=%22none%22 stroke=%22%23ff7a59%22 stroke-width=%2216%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Rajdhani:wght@300;500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script>
+(function(){var d=document.documentElement,t=null;d.classList.add("js");
+try{t=localStorage.getItem("theme")}catch(e){}
+if(!t)t=matchMedia("(prefers-color-scheme:light)").matches?"light":"dark";
+d.setAttribute("data-theme",t)})();
+</script>
+<style>
+:root{--bg:#0b1230;--bg2:#121c45;--ink:#f2f4ff;--muted:#aab5da;--card:rgba(255,255,255,.07);--line:rgba(255,255,255,.16);--accent:#8ea2ff;--on-accent:#0b1230;--pill:linear-gradient(90deg,#ff5c93,#ff9a3c);--pill-ink:#0b1230;--navbg:rgba(11,18,48,.78);--b1:#ff5c93;--b2:#4a6bff;--bo:.38;--glow:0 0 28px rgba(142,162,255,.45)}
+html[data-theme=light]{--bg:#f8cb74;--bg2:#fbd98f;--ink:#0a0a0a;--muted:#3b3320;--card:rgba(255,255,255,.55);--line:rgba(0,0,0,.22);--accent:#0a0a0a;--on-accent:#f8cb74;--pill:#0a0a0a;--pill-ink:#f8cb74;--navbg:rgba(248,203,116,.85);--b1:#fff3d0;--b2:#ff9a3c;--bo:.5;--glow:none}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.05rem/1.7 "DM Sans",system-ui,sans-serif;overflow-x:hidden;transition:background .5s,color .5s}
+body.lock{overflow:hidden}
+h1,h2,h3,nav,.btn,.when,.stat b,.sub{font-family:"Rajdhani","DM Sans",sans-serif}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--b1);outline-offset:3px}
+.blob{position:fixed;z-index:-1;width:46vmax;height:46vmax;filter:blur(70px);opacity:var(--bo);border-radius:42% 58% 63% 37%/45% 42% 58% 55%;animation:morph 16s ease-in-out infinite alternate;pointer-events:none}
+.blob.a{top:-14vmax;left:-12vmax;background:var(--b1)}
+.blob.b{bottom:-16vmax;right:-14vmax;background:var(--b2);animation-delay:-8s}
+@keyframes morph{50%{border-radius:60% 40% 35% 65%/55% 60% 40% 45%;transform:translate(4vmax,3vmax) rotate(40deg)}100%{border-radius:38% 62% 50% 50%/62% 38% 62% 38%;transform:translate(-3vmax,5vmax) rotate(-30deg)}}
+#bar{position:fixed;top:0;left:0;height:4px;width:100%;background:var(--pill);transform:scaleX(0);transform-origin:left;z-index:30}
+/* intro */
+#intro{display:none;position:fixed;inset:0;z-index:50;background:#0b1230;color:#f2f4ff;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:transform 1s cubic-bezier(.7,0,.2,1)}
+.js #intro{display:flex}
+#intro.out{transform:translateY(-101%)}
+#intro .r{width:min(46vw,200px);aspect-ratio:1;border-radius:50%;background:conic-gradient(#ff5c93,#ff9a3c,#4a6bff,#7b4dff,#ff5c93);-webkit-mask:radial-gradient(circle,transparent 55%,#000 56%);mask:radial-gradient(circle,transparent 55%,#000 56%);animation:spin 3s linear infinite,pop 1s both;margin-bottom:26px}
+@keyframes spin{to{rotate:360deg}}
+@keyframes pop{from{scale:0;opacity:0}}
+#intro p{margin:0;opacity:0;animation:rise .9s forwards}
+#intro .w1{font:300 clamp(1.4rem,5vw,2.4rem)/1.2 "Rajdhani";letter-spacing:.5em;animation-delay:.5s}
+#intro .w2{font:700 clamp(2.4rem,9vw,5rem)/1.05 "Rajdhani";background:linear-gradient(90deg,#8ea2ff,#ff5c93,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent;animation-delay:1.1s}
+#intro .w3{font:500 1.5rem "Cormorant Garamond",serif;letter-spacing:.2em;margin-top:12px;animation-delay:1.7s}
+@keyframes rise{from{opacity:0;transform:translateY(24px);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
+#intro .ld{width:min(60vw,260px);height:3px;background:rgba(255,255,255,.18);margin-top:34px;border-radius:3px;overflow:hidden}
+#intro .ld i{display:block;height:100%;background:linear-gradient(90deg,#ff5c93,#ff9a3c);transform:scaleX(0);transform-origin:left;animation:fill 3.4s linear forwards}
+@keyframes fill{to{transform:none}}
+#enter{margin-top:22px;background:transparent;border:2px solid #f2f4ff;color:#f2f4ff;border-radius:999px;padding:8px 26px;font:700 1rem "Rajdhani";cursor:pointer;opacity:0;animation:rise .8s 2.2s forwards}
+#enter:hover{background:#f2f4ff;color:#0b1230}
+/* nav */
+nav{position:sticky;top:0;z-index:20;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding:12px 24px;background:var(--navbg);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);font-weight:500;letter-spacing:.08em}
+nav .l,nav .rr{display:flex;gap:22px;align-items:center}
+nav .rr{justify-content:flex-end}
+nav a{color:var(--ink);text-decoration:none;background:linear-gradient(var(--b1),var(--b1)) 0 100%/0 2px no-repeat;transition:background-size .25s}
+nav a:hover{background-size:100% 2px}
+.mono{font:700 1.5rem "Cormorant Garamond",serif;letter-spacing:.04em;border:2px solid var(--ink);border-radius:50%;width:44px;height:44px;display:grid;place-items:center;text-decoration:none}
+.tg{position:relative;width:62px;height:32px;border-radius:999px;border:2px solid var(--ink);background:#fff;cursor:pointer;padding:0;flex:none}
+.tg i{position:absolute;top:2px;left:2px;width:24px;height:24px;border-radius:50%;background:#0a0a0a;color:#fff;font:normal 14px/24px sans-serif;text-align:center;transition:transform .35s cubic-bezier(.5,1.6,.5,1)}
+html[data-theme=dark] .tg i{transform:translateX(30px);background:#0b1230}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+/* hero */
+.hero{text-align:center;padding:50px 0 40px}
+.orb{position:relative;width:min(62vw,320px);aspect-ratio:1;margin:0 auto -60px;perspective:700px}
+.orb b{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 90deg,#ff5c93,#ff9a3c,#4a6bff,#7b4dff,#ff5c93);-webkit-mask:radial-gradient(circle,transparent 50%,#000 51%);mask:radial-gradient(circle,transparent 50%,#000 51%);filter:drop-shadow(0 12px 30px rgba(255,92,147,.4));animation:tilt 9s linear infinite}
+.orb b+b{inset:10%;animation-duration:13s;animation-direction:reverse;opacity:.85}
+@keyframes tilt{from{transform:rotateX(62deg) rotateZ(0)}to{transform:rotateX(62deg) rotateZ(360deg)}}
+.orb::after{content:"";position:absolute;inset:34%;border-radius:50%;background:radial-gradient(circle,var(--b2),transparent 70%);filter:blur(20px);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.4);opacity:.6}}
+h1{font:600 clamp(2.8rem,9vw,6rem)/1 "Cormorant Garamond",serif;letter-spacing:.02em;margin:0 0 12px;position:relative}
+h1 span{display:inline-block;animation:drop .8s cubic-bezier(.2,.9,.3,1.3) both paused}
+body.ready h1 span{animation-play-state:running}
+@keyframes drop{from{opacity:0;transform:translateY(-.5em) rotate(-8deg)}}
+.sub{font-weight:500;letter-spacing:.3em;color:var(--muted);margin:0 0 20px}
+.pill{display:inline-block;background:var(--pill);color:var(--pill-ink);border-radius:999px;padding:8px 30px;font:700 1.15rem "Rajdhani";letter-spacing:.12em;min-width:min(100%,360px);margin-bottom:22px}
+.pill::after{content:"";display:inline-block;width:2px;height:1em;background:currentColor;margin-left:5px;vertical-align:-.15em;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.lead{max-width:48ch;margin:0 auto 24px;color:var(--muted)}
+.btn{display:inline-block;padding:10px 26px;border-radius:999px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:700;font-size:1.1rem;margin:0 8px 10px;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px);box-shadow:var(--glow),0 8px 0 -4px var(--b1)}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.scroll{display:block;margin:30px auto 0;width:22px;height:22px;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);rotate:45deg;animation:bob 1.6s ease-in-out infinite}
+@keyframes bob{50%{translate:4px 4px}}
+/* sections */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:30px 0 20px}
+.stat,.card{background:var(--card);border:1px solid var(--line);border-radius:22px;backdrop-filter:blur(8px)}
+.stat{padding:16px;text-align:center}
+.stat b{display:block;font-size:2.4rem;line-height:1.1;color:var(--accent);font-weight:700}
+.stat span{color:var(--muted);font-size:.95rem}
+section{padding:60px 0;scroll-margin-top:60px}
+h2{font:300 clamp(2rem,6vw,3.2rem)/1.1 "Rajdhani";margin:0 0 26px;position:relative;display:inline-block}
+h2 b{font-weight:700;color:var(--accent)}
+h2::after{content:"";position:absolute;left:0;bottom:-6px;height:4px;width:100%;background:var(--pill);border-radius:4px;transform:scaleX(0);transform-origin:left;transition:transform .9s .2s}
+.in h2::after{transform:none}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{padding:22px;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--glow);border-color:var(--accent)}
+.card h3{margin:0 0 4px;font-size:1.3rem;font-weight:700}
+.card p{margin:0;color:var(--muted)}
+.when{color:var(--accent);font-weight:700;letter-spacing:.06em;font-size:1rem;margin:0 0 2px}
+html[data-theme=light] .when{color:#5a2d00}
+.tl{list-style:none;margin:0;padding:0 0 0 26px;border-left:2px solid var(--line)}
+.tl li{margin:0 0 26px;position:relative}
+.tl li::before{content:"";position:absolute;left:-35px;top:7px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--accent);transition:background .4s .3s,box-shadow .4s .3s}
+.tl li.in::before{background:var(--b1);box-shadow:var(--glow)}
+.tl h3{margin:0;font-size:1.3rem}
+.tl p{margin:2px 0 0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.tags li{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 18px;font-weight:500;transition:transform .2s,background .2s,color .2s}
+.tags li:hover{transform:translateY(-4px) scale(1.05);background:var(--accent);color:var(--on-accent)}
+.certs{columns:2;gap:30px;padding:0;margin:0;list-style:none}
+.certs li{break-inside:avoid;padding:9px 0;border-bottom:1px solid var(--line)}
+.certs small{display:block;color:var(--muted)}
+.net{width:min(100%,300px);float:right;margin:0 0 10px 16px}
+.net line{stroke:var(--line);stroke-width:2}
+.net .p{stroke:var(--b1);stroke-width:4;stroke-linecap:round;stroke-dasharray:12 10;animation:flow 1.2s linear infinite}
+.net circle{fill:var(--bg);stroke:var(--accent);stroke-width:3}
+.net .k{fill:var(--b1);stroke:none}
+@keyframes flow{to{stroke-dashoffset:-22}}
+.js .rv{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
+.js .rv.in{opacity:1;transform:none}
+footer{padding:30px 0 50px;color:var(--muted);border-top:1px solid var(--line);text-align:center}
+@media (max-width:760px){nav{grid-template-columns:auto 1fr;gap:10px}nav .l{display:none}nav .rr{gap:14px;flex-wrap:wrap;font-size:.95rem}.mono{width:38px;height:38px;font-size:1.2rem}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.certs{columns:1}.net{float:none;display:block;margin:0 auto 16px}.sub{letter-spacing:.15em}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}h2::after{transform:none}#intro{display:none!important}}
+</style>
+</head>
+<body class="lock">
+<div id="intro" role="dialog" aria-label="Welcome">
+<div class="r" aria-hidden="true"></div>
+<p class="w1">Welcome to</p>
+<p class="w2">my portfolio</p>
+<p class="w3">Jayasudiksha M</p>
+<div class="ld" aria-hidden="true"><i></i></div>
+<button id="enter" type="button">Enter</button>
+</div>
+<div class="blob a"></div><div class="blob b"></div>
+<div id="bar"></div>
+
+<nav aria-label="Main">
+<div class="l"><a href="#about">About</a><a href="#experience">Experience</a><a href="#research">Research</a></div>
+<a class="mono" href="#top" aria-label="Back to top">JM</a>
+<div class="rr"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+<button class="tg" id="tg" type="button" role="switch" aria-checked="true" aria-label="Night theme"><i id="knob">☾</i></button></div>
+</nav>
+
+<div class="wrap" id="top">
+<header class="hero">
+<div class="orb" aria-hidden="true"><b></b><b></b></div>
+<h1 id="name" aria-label="Jayasudiksha M">Jayasudiksha M</h1>
+<p class="sub">Computer Science Teacher &bull; AI Researcher</p>
+<div class="pill" id="role">Computer Science Teacher</div>
+<p class="lead">I teach AI and computer science to CBSE students and research how machine learning can keep telecom networks moving.</p>
+<a class="btn" href="#research">Read my research</a><a class="btn alt" href="#contact">Get in touch</a>
+<span class="scroll" aria-hidden="true"></span>
+</header>
+
+<div class="stats rv">
+<div class="stat"><b data-to="2">0</b><span>conference papers</span></div>
+<div class="stat"><b data-to="5">0</b><span>projects built</span></div>
+<div class="stat"><b data-to="17">0</b><span>teams at my coding event</span></div>
+<div class="stat"><b data-to="1000" data-plus="1">0</b><span>LinkedIn followers</span></div>
+</div>
+
+<section id="about" class="rv">
+<h2>About <b>me</b></h2>
+<p>I am enthusiastic, self-motivated, responsible and hard-working, and I like to prove myself by taking opportunities as they come. I completed my MCA at Amrita Vishwa Vidyapeetham, Kochi, after a B.Voc in Software Development at St. Teresa’s College, Ernakulam, and I went to school at Lakshmi School, Madurai.</p>
+<p>I want to make my dream a success, contribute my skills and help the organisation I work with grow along with my career. I am based in Kochi and open to on-site, hybrid and remote roles.</p>
+</section>
+
+<section id="experience" class="rv">
+<h2>My <b>journey</b></h2>
+<ul class="tl">
+<li class="rv"><p class="when">Jun 2026 – present</p><h3>Computer Science Teacher, Chinmaya Vidyalaya West Kochi</h3><p>Teaching AI to Grades 9–10 and Computer Science to Grade 11 under the CBSE curriculum. Class Teacher for Grade 11, handling academics, mentorship and student welfare, with a focus on coding, AI, data literacy and critical thinking.</p></li>
+<li class="rv"><p class="when">May – Jun 2026</p><h3>Teaching Assistant Intern, Amrita Online</h3><p>Supported faculty on the Online MBA programme under the AHEAD initiative: project coordination, curating learning resources, editing instructional videos, managing the LMS, designing quizzes and assignments, moderating live sessions and supporting grading.</p></li>
+<li class="rv"><p class="when">Aug 2024 – Mar 2026</p><h3>Finance Lead, Institution’s Innovation Council, Amrita Kochi</h3><p>Led finances and events, volunteered at Smart India Hackathon, and organised Code Duo Showdown, a full-day pair-programming contest for 17 teams of UG and PG students on 9 February 2026.</p></li>
+<li class="rv"><p class="when">Aug 2025 – present</p><h3>Student Member, Google for Developers</h3><p>Member of the Google Developer Program and GDG Cloud. Attended Google Cloud Community Days 2025, Kochi.</p></li>
+<li class="rv"><p class="when">Jul – Dec 2025</p><h3>Internships and programmes</h3><p>Data Associate L1 at Infotact Solutions, virtual intern at Infosys Springboard, contributor at GirlScript Summer of Code, participant in Pragati: Path to Future (Cohort 6), and campus ambassador for Unstop and Techfest, IIT Bombay.</p></li>
+<li class="rv"><p class="when">2023 – 2024</p><h3>Earlier internships</h3><p>Web development intern at CodSoft and Prodigy InfoTech (Sep – Oct 2024), and software testing intern at WAHY Lab Solutions, Kochi (May – Jun 2023).</p></li>
+<li class="rv"><p class="when">Jul 2022 – present</p><h3>Volunteer Teacher, Insight for Innovation (Project Ganitham)</h3><p>Teaching volunteer in a community education project.</p></li>
+</ul>
+<h3 style="margin:36px 0 14px;font:300 2rem Rajdhani">Edu<b style="font-weight:700">cation</b></h3>
+<div class="grid">
+<article class="card"><p class="when">Jul 2024 – Jun 2026</p><h3>Master of Computer Applications</h3><p>Amrita Vishwa Vidyapeetham, Kochi. Class Leader (2024–25) and IIC Finance Lead.</p></article>
+<article class="card"><p class="when">2021 – 2024</p><h3>B.Voc Software Development</h3><p>St. Teresa’s College, Ernakulam. Class Leader; member of Bhoomitrasena, Rotaract Club, Youkan Heal and Dance Club.</p></article>
+<article class="card"><p class="when">2019 – 2021</p><h3>Commerce with Physical Education</h3><p>Lakshmi School, Madurai. School House Captain.</p></article>
+<article class="card"><p class="when">Honour</p><h3>Sini Jacob Memorial Scholarship</h3><p>Awarded on 19 March 2024 by St. Teresa’s College for meritorious service in extension activities.</p></article>
+</div>
+</section>
+
+<section id="research" class="rv">
+<h2>Published <b>research</b></h2>
+<article class="card">
+<svg class="net" viewBox="0 0 360 300" role="img" aria-label="Network graph with data packets on an optimised route"><line x1="50" y1="60" x2="150" y2="40"/><line x1="50" y1="60" x2="90" y2="170"/><line x1="150" y1="40" x2="250" y2="90"/><line x1="90" y1="170" x2="190" y2="200"/><line x1="150" y1="40" x2="190" y2="200"/><line x1="250" y1="90" x2="310" y2="210"/><line x1="190" y1="200" x2="310" y2="210"/><polyline class="p" fill="none" points="50,60 150,40 250,90 310,210"/><circle cx="50" cy="60" r="13"/><circle cx="150" cy="40" r="10"/><circle cx="250" cy="90" r="10"/><circle cx="310" cy="210" r="13"/><circle cx="90" cy="170" r="9"/><circle cx="190" cy="200" r="9"/><circle class="k" r="6"><animateMotion dur="3.6s" repeatCount="indefinite" path="M50,60 L150,40 L250,90 L310,210"/></circle><circle class="k" r="6"><animateMotion dur="3.6s" begin="1.8s" repeatCount="indefinite" path="M50,60 L150,40 L250,90 L310,210"/></circle></svg>
+<p class="when">ICSCSS 2026, Hindusthan College of Engineering and Technology, Coimbatore</p><h3>Artificial Intelligence Based Optimization of Network Traffic at Telecommunication Companies</h3><p>A comparison of machine learning and deep learning for forecasting and optimising network traffic, accepted at the 4th International Conference on Sustainable Computing and Smart Systems and listed on IEEE Xplore. Co-authored with Aparna Sasikumar under the guidance of Leena Vishnu Namboothiri.</p><p style="margin-top:12px"><a href="https://ieeexplore.ieee.org/document/11645681">View on IEEE Xplore</a></p></article>
+<p style="margin-top:20px">I also presented a paper at an international conference on women entrepreneurship and financial independence at Deva Matha College, Kuravilangad.</p>
+</section>
+
+<section id="projects" class="rv">
+<h2>Things I’ve <b>built</b></h2>
+<div class="grid">
+<article class="card"><p class="when">Aug – Sep 2025</p><h3>AI Collaborative Paint App</h3><p>Built at Infotact Solutions: a real-time, multi-user drawing tool with brush, eraser, fill and shape tools.</p></article>
+<article class="card"><p class="when">Jan – May 2025</p><h3>Jasha Store</h3><p>An AI webpage for visualising dresses in 3D, using deep learning and Python.</p></article>
+<article class="card"><p class="when">Jun 2024</p><h3>Fake News Detection</h3><p>A machine learning model that uses NLP to predict whether a news article is real or fake.</p></article>
+<article class="card"><p class="when">Jul 2023 – Mar 2024</p><h3>Consumer Computing</h3><p>A webpage on market potential, sellers’ promotions and buyer behaviour for electronic gadgets.</p></article>
+</div>
+<p style="margin-top:20px"><a href="https://github.com/Jayasudiksha">More on GitHub</a></p>
+</section>
+
+<section id="skills" class="rv">
+<h2>What I <b>know</b></h2>
+<ul class="tags"><li>Teaching AI and CS</li><li>CBSE curriculum</li><li>Python</li><li>Machine learning</li><li>Deep learning</li><li>HTML and web development</li><li>SQL</li><li>Software testing</li><li>Google Cloud and Gemini</li><li>Cybersecurity basics</li><li>Leadership</li><li>Event hosting</li><li>English (B2)</li></ul>
+<h3 style="margin:36px 0 10px;font:300 2rem Rajdhani">Certifi<b style="font-weight:700">cations</b></h3>
+<ul class="certs">
+<li>Create Your First Gemini Enterprise Application<small>Google Cloud, Aug 2026</small></li>
+<li>OpScape 2.0, top performer<small>IIM Tiruchirappalli on Unstop, Feb 2026</small></li>
+<li>SQL (Basic)<small>HackerRank, Jun 2025</small></li>
+<li>EF SET English, 60/100 (B2)<small>EF SET, Apr 2025</small></li>
+<li>Web Development<small>Prodigy InfoTech, Oct 2024</small></li>
+<li>Google AI Essentials<small>Google, May 2024</small></li>
+<li>Foundations of Cybersecurity<small>Google, Dec 2023</small></li>
+<li>C and HTML<small>Spoken Tutorial, IIT Bombay</small></li>
+<li>SQL and Relational Databases 101<small>Cognitive Class, May 2022</small></li>
+<li>Global Job Readiness Program<small>Deakin University</small></li>
+</ul>
+<p style="margin-top:22px">Also: state-level yoga, second place (ICSE Board). Member of ED Club, Dance Club, IEDC, Rotaract Club and other student clubs.</p>
+</section>
+
+<section id="contact" class="rv" style="text-align:center">
+<h2>Let’s <b>talk</b></h2>
+<p>Open to teaching, research and software roles in Kochi or remote.<br><a href="mailto:jayasudiksha@gmail.com">jayasudiksha@gmail.com</a></p>
+<a class="btn" href="mailto:jayasudiksha@gmail.com">Email me</a><a class="btn alt" href="https://www.linkedin.com/in/jayasudiksha-m-659060249/">LinkedIn</a><a class="btn alt" href="https://github.com/Jayasudiksha">GitHub</a><a class="btn alt" href="https://ieeexplore.ieee.org/document/11645681">IEEE paper</a>
+</section>
+
+<footer>© <span id="y">2026</span> Jayasudiksha M</footer>
+</div>
+
+<script>
+(function(){
+var d=document,h=d.documentElement,b=d.body,rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+d.getElementById("y").textContent=new Date().getFullYear();
+/* theme toggle */
+var tg=d.getElementById("tg"),kn=d.getElementById("knob");
+function paint(){var dk=h.getAttribute("data-theme")==="dark";tg.setAttribute("aria-checked",dk);tg.setAttribute("aria-label",dk?"Night theme":"Day theme");kn.textContent=dk?"\u263E":"\u2600"}
+paint();
+tg.addEventListener("click",function(){var t=h.getAttribute("data-theme")==="dark"?"light":"dark";h.setAttribute("data-theme",t);try{localStorage.setItem("theme",t)}catch(e){}paint()});
+/* name letters */
+var n=d.getElementById("name"),t=n.textContent;n.textContent="";
+t.split("").forEach(function(c,i){var s=d.createElement("span");s.setAttribute("aria-hidden","true");s.textContent=c===" "?"\u00a0":c;s.style.animationDelay=(i*60)+"ms";n.appendChild(s)});
+/* role typer */
+var roles=["Computer Science Teacher","AI and ML Researcher","Software Developer","Community Leader"],r=d.getElementById("role"),ri=0,ci=roles[0].length,del=true,started=false;
+function typer(){if(started||rm)return;started=true;(function tick(){if(del){ci--;if(ci<=0){del=false;ri=(ri+1)%roles.length;ci=0}}else{ci++;if(ci>=roles[ri].length)del=true}
+r.textContent=roles[ri].slice(0,ci)||"\u00a0";setTimeout(tick,del&&ci===roles[ri].length?1700:(del?35:75))})()}
+/* intro */
+var intro=d.getElementById("intro"),done=false;
+function enter(){if(done)return;done=true;intro.classList.add("out");b.classList.remove("lock");b.classList.add("ready");typer();setTimeout(function(){intro.remove()},1100)}
+if(rm){intro.remove();b.classList.remove("lock");b.classList.add("ready")}
+else{setTimeout(enter,4300);d.getElementById("enter").addEventListener("click",enter);addEventListener("keydown",function(e){if(e.key==="Escape"||e.key==="Enter")enter()})}
+if(rm){var sv=d.querySelector(".net");sv.pauseAnimations&&sv.pauseAnimations()}
+/* progress bar */
+var bar=d.getElementById("bar");
+addEventListener("scroll",function(){var e=h;bar.style.transform="scaleX("+(e.scrollTop/(e.scrollHeight-e.clientHeight||1))+")"},{passive:true});
+/* reveal + counters */
+function count(el){var to=+el.dataset.to,p=el.dataset.plus?"+":"";if(rm){el.textContent=to.toLocaleString()+p;return}
+(function f(ts,s){s=s||ts;var k=Math.min((ts-s)/1400,1);el.textContent=Math.round(to*(1-Math.pow(1-k,3))).toLocaleString()+(k===1?p:"");if(k<1)requestAnimationFrame(function(x){f(x,s)})})(performance.now())}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");e.target.querySelectorAll("[data-to]").forEach(count);io.unobserve(e.target)}})},{threshold:.15});
+d.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
